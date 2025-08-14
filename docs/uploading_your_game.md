@@ -11,11 +11,15 @@ There are these options:
 
 Here is a comparison of the features of these approaches:
 
+<!-- markdownlint-disable MD013 --><!-- Tables cannot be split up over lines, hence will break 80 characters per line -->
+
 Option                               |Advantages      |Disadvantages
 -------------------------------------|----------------|------------------------------------------------------------
 `[1]` Use a zip file                 |Easiest to do   |Clumsy, manual steps, does not scale with more complex games
 `[2]` Create a zip file from a script|Allows scripting|Still requires manual steps
 `[3]` Use `steamcmd`                 |Allows scripting|Need to install and learn `steamcmd` and the VDF format
+
+<!-- markdownlint-enable MD013 -->
 
 Here is a decision tree:
 

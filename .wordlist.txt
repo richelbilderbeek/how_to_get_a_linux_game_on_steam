@@ -29,3 +29,6 @@ SteamSDK
 TODO
 MXE
 crosscompiler
+SFML
+LTS
+

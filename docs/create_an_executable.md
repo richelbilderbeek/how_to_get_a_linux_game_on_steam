@@ -45,7 +45,7 @@ using this method.
 !!! warning "Untested solution: provide the shared object files?"
 
     A possible and untested solution is to provide the needed libraries
-    alongside the game executable. Maybe it works to upload 
+    alongside the game executable. Maybe it works to upload
     the executable with all shared objects (`.so`) needed.
 
     Also, the user will still need to use the 'Legacy runtime 1.0' launcher.

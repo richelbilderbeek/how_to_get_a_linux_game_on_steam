@@ -71,54 +71,54 @@ and then using `steamcmd` to upload the files.
 
 ???- question "Could you give an example `AppBuild` file?"
 
-  Below is an example `AppBuild` file.
-  It assumes that there is a `DepotBuild` file
-  called `depot_build_3873941.vdf`.
+    Below is an example `AppBuild` file.
+    It assumes that there is a `DepotBuild` file
+    called `depot_build_3873941.vdf`.
 
 
-  ```text
-  "AppBuild"
-  {
-    "AppID" "3873940" // your AppID
-    "Desc" "My first VDF files" // internal description for this build
-
-    "ContentRoot" "." // root content folder, relative to location of this file
-    "BuildOutput" "." // build output folder for build logs and build cache files
-
-    "Depots"
+    ```text
+    "AppBuild"
     {
-      // file mapping instructions for each depot are in separate script files
-      "3873941" "depot_build_3873941.vdf"
+      "AppID" "3873940" // your AppID
+      "Desc" "My first VDF files" // internal description for this build
+
+      "ContentRoot" "." // root content folder, relative to location of this file
+      "BuildOutput" "." // build output folder for build logs and build cache files
+
+      "Depots"
+      {
+        // file mapping instructions for each depot are in separate script files
+        "3873941" "depot_build_3873941.vdf"
+      }
     }
-  }
-  ```
+    ```
 
 ???- question "Could you give an example `DepotBuild` file?"
 
-  Below is an example `DepotBuild` file.
-  To be able to work together with the example `AppBuild` file,
-  this file must be called `depot_build_3873941.vdf`:
+    Below is an example `DepotBuild` file.
+    To be able to work together with the example `AppBuild` file,
+    this file must be called `depot_build_3873941.vdf`:
 
-  ```text
-  "DepotBuild"
-  {
-      "DepotID" "3873941"
-      "ContentRoot" "../"
+    ```text
+    "DepotBuild"
+    {
+        "DepotID" "3873941"
+        "ContentRoot" "../"
 
-      "FileMapping"
-      {
-          "LocalPath" "conquer_chess"
-          "DepotPath" "."
-          "Recursive" "1"
-      }
-      "FileExclusion" "*.png"
-      "FileExclusion" "*.ogg"
-      "FileExclusion" "*.jpg"
-      "FileExclusion" "*.ttf"
-      "FileExclusion" "*.txt"
-      "FileExclusion" "*.csv"
-  }
-  ```
+        "FileMapping"
+        {
+            "LocalPath" "conquer_chess"
+            "DepotPath" "."
+            "Recursive" "1"
+        }
+        "FileExclusion" "*.png"
+        "FileExclusion" "*.ogg"
+        "FileExclusion" "*.jpg"
+        "FileExclusion" "*.ttf"
+        "FileExclusion" "*.txt"
+        "FileExclusion" "*.csv"
+    }
+    ```
 
 - Install `steamcmd` from
   [the Valve developer community website](https://developer.valvesoftware.com/wiki/SteamCMD)

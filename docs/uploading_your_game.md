@@ -1,5 +1,11 @@
 # How to upload your game
 
+??? question "Prefer a video?"
+
+    Then watch the YouTube video 
+    [How to upload your Linux game to Steam](https://youtu.be/T6YFKKa9gSI),
+    which goes through this same content and shows how this looks like.
+
 You want to upload your game (and optionally some more files
 that it needs).
 

@@ -4,6 +4,8 @@ edit_uri: blob/main/docs/
 
 nav:
   - Start: index.md
+  - Create an executable: create_an_executable.md
+  - Upload your game: uploading_your_game.md
 
 theme:
   name: material

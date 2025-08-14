@@ -1,5 +1,14 @@
 # Launch on Steam
 
+!!! info "This is an example"
+
+    This is an example page on how a game may document
+    what a user needs to do to launch a game.
+
+    The example game used is called
+    [Conquer Chess](https://richelbilderbeek.github.io/conquer_chess/),
+    which is a FOSS game developed under Linux in C++.
+
 Conquer Chess does not launch out of the box yet.
 This is being worked on.
 
@@ -56,4 +65,6 @@ cd ~/.local/share/Steam/steamapps/common/conquer_chess
 cat conquer_chess_error.txt
 ```
 
-Please [report a bug](../report_a_bug.md) with the error messages.
+Please
+[report a bug](https://richelbilderbeek.github.io/conquer_chess/report_a_bug/)
+with the error messages.

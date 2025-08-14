@@ -28,8 +28,8 @@ This is the easiest way, to just upload your Linux executable.
 
 These are the problems:
 
-- The user must have all needed libraries 
-  (i.e. the things you install with `sudo apt-get install my_library`): 
+- The user must have all needed libraries
+  (i.e. the things you install with `sudo apt-get install my_library`):
   installed.
   If the user is missing libraries
   the game will crash at startup,

@@ -42,13 +42,28 @@ you can find
 [an example documentation page on how to launch a game on Steam](launch_on_steam/README.md)
 using this method.
 
-!!! warning "Untested solution: provide the shared object files?"
+!!! warning "Tested to fail solution: provide the shared object files"
 
-    A possible and untested solution is to provide the needed libraries
-    alongside the game executable. Maybe it works to upload
+    A tested to fail solution is to provide the needed libraries
+    alongside the game executable, i.e. to upload
     the executable with all shared objects (`.so`) needed.
 
-    Also, the user will still need to use the 'Legacy runtime 1.0' launcher.
+    Here is an example, where a folder is show to contain an executable
+    called `conquer_chess`, as well as the `.so` files it needs.
+    However, the executables do not find the `.so`
+    files **in the same folder**.
+
+    ```bash
+    richel@richel-IdeaPad-1-14IGL7:~/snap/steam/common/.local/share/Steam/steamapps/common/conquer_chess$ ls
+    conquer_chess            libsfml-graphics.so.2.6.1  libsfml-system.so.2.6.1
+    libsfml-audio.so         libsfml-network.so         libsfml-window.so
+    libsfml-audio.so.2.6     libsfml-network.so.2.6     libsfml-window.so.2.6
+    libsfml-audio.so.2.6.1   libsfml-network.so.2.6.1   libsfml-window.so.2.6.1
+    libsfml-graphics.so      libsfml-system.so
+    libsfml-graphics.so.2.6  libsfml-system.so.2.6
+    richel@richel-IdeaPad-1-14IGL7:~/snap/steam/common/.local/share/Steam/steamapps/common/conquer_chess$ ./conquer_chess 
+    ./conquer_chess: error while loading shared libraries: libsfml-graphics.so.2.6: cannot open shared object file: No such file or directory
+    ```
 
 ## `[2]` Standalone Linux executable
 

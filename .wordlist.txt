@@ -23,4 +23,9 @@ www
 yml
 gmail
 rjcbilderbeek
-
+runtime
+Flatpak
+SteamSDK
+TODO
+MXE
+crosscompiler

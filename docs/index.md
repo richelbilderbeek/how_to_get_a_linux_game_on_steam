@@ -2,5 +2,5 @@
 
 This website consists of my notes on how to get a game on Steam
 
-- [Create an executable](create_an_executable)
+- [Create an executable](create_an_executable.md)
 - [Uploading your game](uploading_your_game.md)

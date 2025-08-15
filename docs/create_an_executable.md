@@ -53,6 +53,8 @@ using this method.
     However, the executables do not find the `.so`
     files **in the same folder**.
 
+    <!-- markdownlint-disable MD013 --><!-- Verbatim output cannot be split up over lines, hence will break 80 characters per line -->
+
     ```bash
     richel@richel-IdeaPad-1-14IGL7:~/snap/steam/common/.local/share/Steam/steamapps/common/conquer_chess$ ls
     conquer_chess            libsfml-graphics.so.2.6.1  libsfml-system.so.2.6.1
@@ -64,6 +66,8 @@ using this method.
     richel@richel-IdeaPad-1-14IGL7:~/snap/steam/common/.local/share/Steam/steamapps/common/conquer_chess$ ./conquer_chess 
     ./conquer_chess: error while loading shared libraries: libsfml-graphics.so.2.6: cannot open shared object file: No such file or directory
     ```
+
+    <!-- markdownlint-enable MD013 -->
 
 ## `[2]` Standalone Linux executable
 
